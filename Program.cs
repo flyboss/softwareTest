@@ -108,8 +108,8 @@ namespace nextday
             xlRange.Cells[1, 2] = DateTime.Now;
             xlRange.Cells[1, 5] = "彭嘉琦 李威";
 
-            Microsoft.Office.Interop.Excel.Range c1 = (Microsoft.Office.Interop.Excel.Range)xlworksheet.Cells[4, 1];
-            Microsoft.Office.Interop.Excel.Range c2 = (Microsoft.Office.Interop.Excel.Range)xlworksheet.Cells[rowCnt, colCnt];
+            Excel.Range c1 = (Excel.Range)xlworksheet.Cells[4, 1];
+            Excel.Range c2 = (Excel.Range)xlworksheet.Cells[rowCnt, colCnt];
             Excel.Range rng = (Microsoft.Office.Interop.Excel.Range)xlworksheet.get_Range(c1, c2);
             object[,] exceldata = (object[,])rng.get_Value(Microsoft.Office.Interop.Excel.XlRangeValueDataType.xlRangeValueDefault);
             for (int i = 1; i <= rowCnt - 3; i++)
@@ -127,7 +127,14 @@ namespace nextday
                 }
 
             }
-            string newPath = "C:\\Users\\91574\\Desktop\\大三下\\软测\\nextday报告"+ DateTime.Now.ToString("yyyyMMddHHmmss")+".xlsx";
+            char sp = '\\';
+            string[] road = path.Split(sp);
+            string newPath="";
+            for (int i = 0; i < road.Length-1 ; i++)
+            {
+                newPath += road[i] + "\\";
+            }
+            newPath+= "nextday测试报告"+ DateTime.Now.ToString("yyyyMMddHHmmss")+".xlsx";
             xlworkbook.SaveAs(newPath);
             xlworkbook.Close();
             xlApp.Quit();
