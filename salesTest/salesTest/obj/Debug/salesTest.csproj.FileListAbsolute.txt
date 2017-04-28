@@ -1,0 +1,6 @@
+c:\users\ccmeow\documents\visual studio 2015\Projects\salesTest\salesTest\bin\Debug\salesTest.exe.config
+c:\users\ccmeow\documents\visual studio 2015\Projects\salesTest\salesTest\bin\Debug\salesTest.exe
+c:\users\ccmeow\documents\visual studio 2015\Projects\salesTest\salesTest\bin\Debug\salesTest.pdb
+c:\users\ccmeow\documents\visual studio 2015\Projects\salesTest\salesTest\obj\Debug\salesTest.exe
+c:\users\ccmeow\documents\visual studio 2015\Projects\salesTest\salesTest\obj\Debug\salesTest.pdb
+c:\users\ccmeow\documents\visual studio 2015\Projects\salesTest\salesTest\obj\Debug\salesTest.csprojResolveAssemblyReference.cache
