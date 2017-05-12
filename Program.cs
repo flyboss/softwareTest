@@ -143,7 +143,9 @@ namespace nextday
         static void Main(string[] args)
         {
             if(args.Length!=0)
-            test(args[0].Trim());
+              test(args[0].Trim());
+            //test("C: \\Users\\91574\\Desktop\\大三下\\软测\\nextday等价类.xlsx");
         }
+
     }
 }
