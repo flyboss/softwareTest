@@ -15,7 +15,7 @@ namespace nextday
             int year = testDate[0];
             int month = testDate[1];
             int day = testDate[2];
-            if (year < 1 || year > 10000 || month < 1 || month > 12 || day < 1 || day > 31)
+            if (year < 0|| year > 10000 || month < 1 || month > 12 || day < 1 || day > 31)
             {
                 if (compareExpect(expect, realout, "error", "error", "error", "日期不符合规定"))
                 {
